@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Glyphix | جليفكس - زخرفة النصوص وأسماء المستخدمين</title><style>
+:root{--g:linear-gradient(135deg,#6d5efc,#b46bff 55%,#ff7ac6);--bg:#0a0a12;--line:#ffffff17}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Tahoma,"Noto Sans Arabic","Noto Sans",sans-serif;background:var(--bg);color:#ecebf5;min-height:100vh;overflow-x:hidden;
+background-image:radial-gradient(900px 500px at 85% -10%,#6d5efc2e,transparent),radial-gradient(700px 400px at 0% 10%,#ff7ac61f,transparent),linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:auto,auto,44px 44px,44px 44px}
+.wrap{max-width:1120px;margin:auto;padding:22px 24px}
+nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:46px}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:42px;height:42px;border-radius:13px;background:var(--g);display:grid;place-items:center;box-shadow:0 8px 28px #6d5efc66}
+.brand b{font-size:24px;letter-spacing:.5px;font-weight:800;font-family:Georgia,serif}
+.brand small{display:block;font-size:11px;color:#8d8aa8;letter-spacing:2px;margin-top:-2px}
+.links{display:flex;gap:22px;color:#a7a4c0;font-size:14px;align-items:center}
+.links a{padding:9px 18px;border-radius:11px;background:#fff;color:#14122a;font-weight:700}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;margin-bottom:46px}
+.badge{display:inline-block;font-size:13px;padding:7px 14px;border:1px solid var(--line);border-radius:30px;color:#c9c5ee;background:#ffffff0a;margin-bottom:16px}
+.hero h1{font-size:50px;line-height:1.25;font-weight:900}
+.hero h1 em{font-style:normal;background:var(--g);-webkit-background-clip:text;color:transparent}
+.hero p{color:#a7a4c0;margin:14px 0 22px;font-size:18px;line-height:1.8}
+.stats{display:flex;gap:28px}
+.stats div{font-size:13px;color:#8d8aa8}.stats b{display:block;font-size:26px;color:#fff}
+.demo{background:linear-gradient(160deg,#1b1838,#110f22);border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:0 30px 80px #000a,0 0 0 1px #6d5efc22 inset}
+.demo h4{font-size:12px;color:#8d8aa8;letter-spacing:2px;margin-bottom:12px}
+.bub{background:#0b0a16;border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:10px;direction:ltr;font-size:21px}
+.bub span{display:block;font-size:11px;color:#8d8aa8;direction:rtl;margin-bottom:4px}
+.card{background:#ffffff08;border:1px solid var(--line);border-radius:24px;padding:24px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tab{padding:10px 17px;border-radius:12px;background:transparent;border:1px solid var(--line);font-size:14px;cursor:pointer;color:#b9b6d4;font-family:inherit}
+.tab.on{background:#fff;color:#14122a;font-weight:700;border-color:#fff}
+.mode{display:inline-flex;background:#0b0a16;border:1px solid var(--line);border-radius:14px;padding:4px;margin-bottom:14px}
+.mode button{padding:10px 22px;border-radius:10px;border:0;background:transparent;color:#a7a4c0;font-size:15px;font-family:inherit;cursor:pointer}
+.mode button.on{background:var(--g);color:#fff;font-weight:700}
+input#t{width:100%;padding:18px 20px;font-size:22px;background:#0b0a16;border:1.5px solid #6d5efc77;border-radius:16px;color:#fff;outline:none;font-family:inherit;direction:ltr}
+input#t:focus{border-color:#b46bff;box-shadow:0 0 0 4px #b46bff22}
+.meta{display:flex;justify-content:space-between;color:#8d8aa8;font-size:13px;margin:10px 4px 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#0b0a16;border:1px solid var(--line);border-radius:14px;padding:12px 14px;transition:.2s}
+.row:hover{border-color:#b46bff;transform:translateY(-2px)}
+.row b{font-size:12px;color:#8d8aa8;display:block;font-weight:500;margin-bottom:3px}
+.row div{font-size:20px;direction:ltr;word-break:break-all}
+.cp{flex:none;padding:8px 15px;border:1px solid #6d5efc88;border-radius:10px;background:#6d5efc22;color:#d9d3ff;font-weight:700;cursor:pointer;font-family:inherit}
+.cp:hover{background:var(--g);color:#fff}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.feats .card{padding:20px}.feats i{font-style:normal;font-size:24px;display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:#6d5efc26;margin-bottom:10px}
+.feats h5{font-size:16px;margin-bottom:4px}.feats p{font-size:13px;color:#a7a4c0;line-height:1.7}
+footer{text-align:center;color:#6f6c8c;margin:34px 0 10px;font-size:13px}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.hero h1{font-size:32px}.feats{grid-template-columns:1fr 1fr}.links span{display:none}}
+</style></head><body><div class="wrap">
+<nav><div class="brand"><div class="mark" style="background:none;box-shadow:0 8px 28px #6d5efc66"><svg width="42" height="42" viewBox="0 0 512 512"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d5efc"/><stop offset=".55" stop-color="#b46bff"/><stop offset="1" stop-color="#ff7ac6"/></linearGradient></defs><rect width="512" height="512" rx="120" fill="url(#g)"/><path d="M352 168c-24-22-54-32-90-32-70 0-120 52-120 120s50 120 120 120c46 0 82-20 100-56v-52H266" fill="none" stroke="#fff" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path d="M390 96l12 30 30 12-30 12-12 30-12-30-30-12 30-12z" fill="#fff"/></svg></div><div><b>Glyphix</b><small>جليفكس</small></div></div><div class="links"><span>الخطوط</span><span>الأسماء</span><span>المنصات</span><a>ابدأ الآن</a></div></nav>
+<section class="hero"><div><div class="badge">✦ أداة الزخرفة رقم 1 للعرب</div>
+<h1>اجعل اسمك <em>علامة</em><br>لا تُنسى</h1>
+<p>أكثر من 30 نمط زخرفة لنصوصك وأسماء حساباتك على واتساب وفيسبوك وتيك توك وببجي وفري فاير وتويتر وإنستجرام. انسخ والصق في ثانية.</p>
+<div class="stats"><div><b>30+</b>نمط زخرفة</div><div><b>7</b>منصات</div><div><b>0</b>تسجيل</div></div></div>
+<div class="demo"><h4>LIVE PREVIEW</h4><div class="bub"><span>ببجي</span>【Glyphix】</div><div class="bub"><span>تيك توك</span>✿ 𝗚𝗹𝘆𝗽𝗵𝗶𝘅 ✿</div><div class="bub"><span>فري فاير</span>༒ ɢʟʏᴘʜɪx ༒</div><div class="bub" style="margin:0"><span>إنستجرام</span>• 𝐆𝐥𝐲𝐩𝐡𝐢𝐱 •</div></div></section>
+<div class="card"><div class="tabs" id="tabs"></div>
+<div class="mode"><button id="m1" class="on">زخرفة النص</button><button id="m2">تصميم اسم مستخدم</button></div>
+<input id="t" value="Glyphix" maxlength="40" placeholder="Type here...">
+<div class="meta"><span id="hint">انسخ الشكل الذي يعجبك والصقه في التطبيق</span><span id="cnt"></span></div><div class="grid" id="out"></div></div>
+<div class="feats"><div class="card"><i>⚡</i><h5>فوري</h5><p>النتيجة تظهر أثناء الكتابة بدون انتظار.</p></div><div class="card"><i>🎯</i><h5>مخصص لكل منصة</h5><p>أسماء مناسبة لحدود وأسلوب كل لعبة وتطبيق.</p></div><div class="card"><i>📋</i><h5>نسخ بلمسة</h5><p>زر واحد وجاهز للصق.</p></div><div class="card"><i>🔒</i><h5>خصوصية</h5><p>كل شيء يعمل في متصفحك بلا حفظ.</p></div></div>
+<footer>© Glyphix · جليفكس</footer></div><script>
+const R=(u,l,a)=>s=>[...s].map(c=>{let k=c.codePointAt(0);if(k>=65&&k<=90)return String.fromCodePoint(u+k-65);if(k>=97&&k<=122)return String.fromCodePoint(l+k-97);if(a&&k>=48&&k<=57)return String.fromCodePoint(a+k-48);return c}).join('');
+const map=(from,to)=>s=>[...s].map(c=>{let i=from.indexOf(c.toLowerCase());return i<0?c:[...to][i]}).join('');
+const L='abcdefghijklmnopqrstuvwxyz';
+const styles=[
+["غامق",R(0x1D400,0x1D41A,0x1D7CE)],["مائل",x=>R(0x1D434,0x1D44E)(x).replace(/\u{1D455}/gu,"\u210E")],["غامق مائل",R(0x1D468,0x1D482)],
+["آلة كاتبة",R(0x1D670,0x1D68A,0x1D7F6)],["بدون حواف",R(0x1D5A0,0x1D5BA,0x1D7E2)],
+["دوائر",map(L,'ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ')],["مربعات",R(0x1F130,0x1F130)],
+["حروف صغيرة",map(L,'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀsᴛᴜᴠᴡxʏᴢ')],
+["نجوم",s=>'★彡 '+s+' 彡★'],["تاج",s=>'♛ '+s+' ♛'],["أجنحة",s=>'꧁༺ '+s+' ༻꧂'],["لهب",s=>'✹ '+s+' ✹'],
+["خط تحتي",s=>[...s].join('\u0332')+'\u0332'],["يتوسطه خط",s=>[...s].join('\u0336')+'\u0336'],
+["خط يد",R(0x1D49C,0x1D4B6)],["خط يد غامق",R(0x1D4D0,0x1D4EA)],["قوطي",R(0x1D504,0x1D51E)],["مفرغ",R(0x1D538,0x1D552,0x1D7D8)],["مزخرف",s=>'⚡ '+R(0x1D4D0,0x1D4EA)(s)+' ⚡']
+];
+const plat={all:'الكل',wa:'واتساب',fb:'فيسبوك',tt:'تيك توك',pubg:'ببجي',ff:'فري فاير',tw:'تويتر',ig:'إنستجرام'};
+const deco={pubg:['【','】'],ff:['༒','༒'],tt:['✿','✿'],ig:['•','•'],tw:['⚡','⚡'],wa:['❖','❖'],fb:['✦','✦'],all:['☬','☬']};
+let cur='all',mode=1;
+const tabs=document.getElementById('tabs'),out=document.getElementById('out'),t=document.getElementById('t');
+for(const k in plat){const b=document.createElement('button');b.className='tab'+(k==cur?' on':'');b.textContent=plat[k];b.onclick=()=>{cur=k;[...tabs.children].forEach(x=>x.classList.remove('on'));b.classList.add('on');draw()};tabs.append(b)}
+const f=R(0x1D4D0,0x1D4EA),b=R(0x1D400,0x1D41A,0x1D7CE),d=R(0x1D538,0x1D552,0x1D7D8),sm=map(L,'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀsᴛᴜᴠᴡxʏᴢ');
+function names(s){const [a,z]=deco[cur];s=s.replace(/\s+/g,'_')||'Name';return[
+["كلاسيك",a+' '+s+' '+z],["مقاتل","ꜱǫᴜᴀᴅ • "+sm(s)],["ملكي","♛ "+f(s)+" ♛"],["غامق","「"+b(s)+"」"],
+["مفرغ","『"+d(s)+"』"],["ظل","彡"+s.toUpperCase()+"彡"],["نينجا","༺"+f(s)+"༻"],["رمز","☠ "+s+" ☠"],["برو",s+"ッ"],["ليجند","꧁"+b(s)+"꧂"]]}
+function draw(){const s=t.value||'Glyphix';document.getElementById('cnt').textContent=[...t.value].length+'/40';
+const list=mode==1?styles.map(([n,fn])=>[n,fn(s)]):names(s);
+out.innerHTML='';list.forEach(([n,v])=>{const r=document.createElement('div');r.className='row';r.innerHTML='<span><b></b><div></div></span><button class="cp">نسخ</button>';r.querySelector('b').textContent=n;r.querySelector('div').textContent=v;
+r.querySelector('button').onclick=e=>{navigator.clipboard&&navigator.clipboard.writeText(v);e.target.textContent='تم ✓';setTimeout(()=>e.target.textContent='نسخ',1200)};out.append(r)})}
+t.oninput=draw;
+m1.onclick=()=>{mode=1;m1.classList.add('on');m2.classList.remove('on');draw()};m2.onclick=()=>{mode=2;m2.classList.add('on');m1.classList.remove('on');draw()};
+draw();
+</script>
+</body></html>
